@@ -5,20 +5,20 @@
 class Yeelightcli < Formula
   desc "Command-line tool for managing Yeelight devices. Right now it supports 95% of all features presented in the official documentation."
   homepage "https://github.com/oherych/yeelightcli"
-  version "1.1.12"
+  version "1.1.13"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/oherych/yeelightcli/releases/download/v1.1.12/yeelightcli_1.1.12_Darwin_arm64.tar.gz"
-      sha256 "e9e2b5c056f911341fdc0c1f78d638aabc04d28145b8a37dddd1e9507bb6080e"
+      url "https://github.com/oherych/yeelightcli/releases/download/v1.1.13/yeelightcli_1.1.13_Darwin_arm64.tar.gz"
+      sha256 "5ddf04afa88debce813b61af07f4ef0c8140fe8037cf85aeb4cc1abea5ea3443"
 
       def install
         bin.install "yeelightcli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oherych/yeelightcli/releases/download/v1.1.12/yeelightcli_1.1.12_Darwin_x86_64.tar.gz"
-      sha256 "9326bb723c68ef6b490d8f61b2c3f715490afc9384052dff06f067e4297ad792"
+      url "https://github.com/oherych/yeelightcli/releases/download/v1.1.13/yeelightcli_1.1.13_Darwin_x86_64.tar.gz"
+      sha256 "6ccb58257783f682999ea6c04dc3865ca61656a492a6abfcc59568fb78d17b90"
 
       def install
         bin.install "yeelightcli"
@@ -28,16 +28,16 @@ class Yeelightcli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oherych/yeelightcli/releases/download/v1.1.12/yeelightcli_1.1.12_Linux_arm64.tar.gz"
-      sha256 "81c8eb98e97910ca49c580ed5274626fd8eb48dfb686fcd8a86475b01b6cdd9e"
+      url "https://github.com/oherych/yeelightcli/releases/download/v1.1.13/yeelightcli_1.1.13_Linux_arm64.tar.gz"
+      sha256 "1878dc468988b4e6805695da1171d7b40df08b2acab5997d46bd7b513f315445"
 
       def install
         bin.install "yeelightcli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oherych/yeelightcli/releases/download/v1.1.12/yeelightcli_1.1.12_Linux_x86_64.tar.gz"
-      sha256 "9db3ad883a46736878ce9773bd12d50860fb862a1eb3f766e8c27b71abd93558"
+      url "https://github.com/oherych/yeelightcli/releases/download/v1.1.13/yeelightcli_1.1.13_Linux_x86_64.tar.gz"
+      sha256 "0fd31e6cc403ad631beab2c408e889a3661c6b3cf223857bb20a5d1cb08888ca"
 
       def install
         bin.install "yeelightcli"
